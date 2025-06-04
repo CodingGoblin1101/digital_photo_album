@@ -1,0 +1,27 @@
+ScreenManager:
+    MainScreen:
+        name: 'MainScreen'
+        manager: 'screen_manager'
+
+<MainScreen>
+    name:'MainScreen'
+    MDButton:
+        style: 'filled'
+        pos_hint: {"center_x": .4, "center_y": .5}
+        on_press: root.convert()
+        MDButtonText:
+            text: 'previous'
+
+    MDButton:
+        style: 'filled'
+        pos_hint: {"center_x": .6, "center_y": .5}
+        on_press: root.merge_pdf()
+        MDButtonText:
+            text: 'next'
+
+    MDButton:
+        style: 'filled'
+        pos_hint: {"center_x": .5, "center_y": .4}
+        on_press: root.merge_pdf()
+        MDButtonText:
+            text: 'change page'
